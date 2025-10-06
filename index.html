@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Habib & Adiba</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #f5e6d3 0%, #e8d4c0 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: #faf4ed;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 30px;
+            position: relative;
+        }
+
+        .decoration {
+            position: absolute;
+            opacity: 0.6;
+            z-index: 1;
+        }
+
+        .decoration.top-left {
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 120px;
+        }
+
+        .decoration.top-right {
+            top: 0;
+            right: 0;
+            width: 120px;
+            height: 120px;
+        }
+
+        .decoration.bottom-left {
+            bottom: 80px;
+            left: 0;
+            width: 100px;
+            height: 100px;
+        }
+
+        .decoration.bottom-right {
+            bottom: 80px;
+            right: 0;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Cover Page */
+        .cover-page {
+            text-align: center;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c0 100%);
+            position: relative;
+        }
+
+        .cover-floral {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 800" opacity="0.1"><path d="M50,100 C70,80 90,100 100,120 C110,100 130,80 150,100 C130,120 150,140 130,160 C110,140 90,160 70,140 C90,120 70,100 50,100 Z" fill="%23a67c52"/><path d="M380,200 C400,180 420,200 430,220 C440,200 460,180 480,200 C460,220 480,240 460,260 C440,240 420,260 400,240 C420,220 400,200 380,200 Z" fill="%23a67c52"/><path d="M80,500 C100,480 120,500 130,520 C140,500 160,480 180,500 C160,520 180,540 160,560 C140,540 120,560 100,540 C120,520 100,500 80,500 Z" fill="%23a67c52"/><path d="M350,650 C370,630 390,650 400,670 C410,650 430,630 450,650 C430,670 450,690 430,710 C410,690 390,710 370,690 C390,670 370,650 350,650 Z" fill="%23a67c52"/></svg>');
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        .couple-illustration {
+            width: 280px;
+            height: 320px;
+            margin: 20px auto 30px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 350"><defs><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23f9f1e8;stop-opacity:0.8" /><stop offset="100%" style="stop-color:%23f5e6d3;stop-opacity:0.8" /></linearGradient><linearGradient id="dress" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23e8d4c0;stop-opacity:1" /><stop offset="100%" style="stop-color:%23d4c4b0;stop-opacity:1" /></linearGradient><linearGradient id="suit" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23a67c52;stop-opacity:1" /><stop offset="100%" style="stop-color:%238b5a3c;stop-opacity:1" /></linearGradient></defs><rect width="300" height="350" fill="url(%23bg)"/><g id="bride"><ellipse cx="95" cy="140" rx="28" ry="32" fill="%23f5d5b8"/><path d="M70 120 Q75 100 95 105 Q115 100 120 120 Q115 135 95 140 Q75 135 70 120" fill="%237d5a3c"/><ellipse cx="88" cy="135" rx="2.5" ry="3.5" fill="%232d1f14"/><ellipse cx="102" cy="135" rx="2.5" ry="3.5" fill="%232d1f14"/><path d="M88 145 Q95 148 102 145" stroke="%23c97d5d" stroke-width="1.5" fill="none"/><ellipse cx="85" cy="138" rx="3" ry="2" fill="%23ffb3ba" opacity="0.4"/><ellipse cx="105" cy="138" rx="3" ry="2" fill="%23ffb3ba" opacity="0.4"/><path d="M88 133 Q90 131 92 133" stroke="%232d1f14" stroke-width="1.5" fill="none"/><path d="M98 133 Q100 131 102 133" stroke="%232d1f14" stroke-width="1.5" fill="none"/><circle cx="86" cy="135" r="0.8" fill="%23ffffff"/><circle cx="100" cy="135" r="0.8" fill="%23ffffff"/><ellipse cx="95" cy="152" rx="2.5" ry="1.5" fill="%23c97d5d" opacity="0.3"/><path d="M75 125 Q70 135 73 145 L75 155" stroke="%237d5a3c" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M115 125 Q120 135 117 145 L115 155" stroke="%237d5a3c" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="100" cy="127" r="1.5" fill="%23ffffff" opacity="0.6"/><path d="M68 172 L95 165 L122 172 L125 260 Q95 270 65 260 Z" fill="url(%23dress)"/><path d="M70 180 Q95 175 120 180" stroke="%23b8a588" stroke-width="1" fill="none" opacity="0.5"/><ellipse cx="95" cy="172" rx="8" ry="3" fill="%23e8d4c0"/><rect x="85" y="165" width="20" height="15" rx="2" fill="%23e8d4c0"/><path d="M85 175 L105 175" stroke="%23d4c4b0" stroke-width="1"/></g><g id="groom"><ellipse cx="205" cy="140" rx="28" ry="32" fill="%23f5d5b8"/><path d="M178 115 Q185 95 205 100 Q225 95 232 115 Q228 128 215 135 Q205 130 195 135 Q182 128 178 115" fill="%235d4a36"/><path d="M178 115 Q175 125 178 135" stroke="%235d4a36" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M232 115 Q235 125 232 135" stroke="%235d4a36" stroke-width="10" fill="none" stroke-linecap="round"/><ellipse cx="198" cy="135" rx="2.5" ry="3.5" fill="%232d1f14"/><ellipse cx="212" cy="135" rx="2.5" ry="3.5" fill="%232d1f14"/><path d="M198 145 Q205 148 212 145" stroke="%23c97d5d" stroke-width="1.5" fill="none"/><ellipse cx="195" cy="138" rx="3" ry="2" fill="%23ffb3ba" opacity="0.4"/><ellipse cx="215" cy="138" rx="3" ry="2" fill="%23ffb3ba" opacity="0.4"/><path d="M196 132 Q198 130 200 132" stroke="%232d1f14" stroke-width="1.8" fill="none"/><path d="M210 132 Q212 130 214 132" stroke="%232d1f14" stroke-width="1.8" fill="none"/><circle cx="196" cy="135" r="0.8" fill="%23ffffff"/><circle cx="210" cy="135" r="0.8" fill="%23ffffff"/><ellipse cx="205" cy="152" rx="2.5" ry="1.5" fill="%23c97d5d" opacity="0.3"/><rect x="185" y="165" width="40" height="95" rx="3" fill="url(%23suit)"/><rect x="187" y="167" width="36" height="91" rx="2" fill="%23a67c52"/><path d="M205 167 L205 258" stroke="%238b5a3c" stroke-width="1.5"/><polygon points="200,172 210,172 212,180 198,180" fill="%238b5a3c"/><rect x="197" y="165" width="16" height="8" rx="1" fill="%23ffffff"/></g></svg>') center/contain no-repeat;
+            z-index: 2;
+            position: relative;
+        }
+
+        .wedding-title {
+            font-size: 16px;
+            color: #a67c52;
+            margin-bottom: 15px;
+            font-weight: normal;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .couple-names {
+            font-size: 42px;
+            color: #8b5a3c;
+            margin-bottom: 20px;
+            font-family: 'Brush Script MT', cursive;
+            font-weight: normal;
+            position: relative;
+            z-index: 2;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .greeting-text {
+            font-size: 15px;
+            color: #8b6f47;
+            margin-bottom: 25px;
+            font-style: italic;
+            position: relative;
+            z-index: 2;
+        }
+
+        .guest-name {
+            font-size: 18px;
+            color: #5d4e37;
+            margin-bottom: 30px;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .open-btn {
+            background: #9b7653;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(155, 118, 83, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        .open-btn:hover {
+            background: #8b6647;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(155, 118, 83, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            display: none;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Welcome Page */
+        .bismillah {
+            font-size: 24px;
+            color: #8b5a3c;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .welcome-text {
+            font-size: 15px;
+            color: #8b6f47;
+            text-align: center;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .bride-photo {
+            width: 200px;
+            height: 280px;
+            margin: 0 auto;
+            border-radius: 20px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280"><defs><linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23ffffff;stop-opacity:1" /><stop offset="100%" style="stop-color:%23f5e6d3;stop-opacity:1" /></linearGradient><linearGradient id="dress2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%23e8d4c0;stop-opacity:1" /><stop offset="100%" style="stop-color:%23d4c4b0;stop-opacity:1" /></linearGradient></defs><rect width="200" height="280" rx="20" fill="url(%23bg2)"/><ellipse cx="100" cy="95" rx="32" ry="36" fill="%23f5d5b8"/><path d="M72 75 Q78 52 100 58 Q122 52 128 75 Q122 92 108 100 Q100 95 92 100 Q78 92 72 75" fill="%237d5a3c"/><ellipse cx="92" cy="90" rx="3" ry="4" fill="%232d1f14"/><ellipse cx="108" cy="90" rx="3" ry="4" fill="%232d1f14"/><path d="M92 102 Q100 106 108 102" stroke="%23c97d5d" stroke-width="2" fill="none"/><ellipse cx="88" cy="94" rx="4" ry="2.5" fill="%23ffb3ba" opacity="0.4"/><ellipse cx="112" cy="94" rx="4" ry="2.5" fill="%23ffb3ba" opacity="0.4"/><path d="M90 87 Q92 85 94 87" stroke="%232d1f14" stroke-width="2" fill="none"/><path d="M106 87 Q108 85 110 87" stroke="%232d1f14" stroke-width="2" fill="none"/><circle cx="90.5" cy="90" r="1" fill="%23ffffff"/><circle cx="106.5" cy="90" r="1" fill="%23ffffff"/><ellipse cx="100" cy="108" rx="3" ry="2" fill="%23c97d5d" opacity="0.3"/><path d="M75 80 Q68 92 72 105 L75 118" stroke="%237d5a3c" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M125 80 Q132 92 128 105 L125 118" stroke="%237d5a3c" stroke-width="14" fill="none" stroke-linecap="round"/><circle cx="105" cy="72" r="2" fill="%23ffffff" opacity="0.6"/><path d="M65 130 L100 122 L135 130 L138 240 Q100 252 62 240 Z" fill="url(%23dress2)"/><path d="M68 142 Q100 136 132 142" stroke="%23b8a588" stroke-width="1.5" fill="none" opacity="0.5"/><ellipse cx="100" cy="130" rx="10" ry="4" fill="%23e8d4c0"/><rect x="88" y="122" width="24" height="18" rx="3" fill="%23e8d4c0"/><path d="M88 135 L112 135" stroke="%23d4c4b0" stroke-width="1.5"/><path d="M70 150 Q100 165 130 150" stroke="%23ffffff" stroke-width="2" fill="none" opacity="0.3"/></svg>') center/cover no-repeat;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Event Details */
+        .event-date {
+            font-size: 16px;
+            color: #8b6f47;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .save-date-btn {
+            background: #9b7653;
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 25px;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: all 0.3s;
+        }
+
+        .save-date-btn:hover {
+            background: #8b6647;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(155, 118, 83, 0.4);
+        }
+
+        /* Countdown */
+        .countdown-title {
+            font-size: 28px;
+            color: #8b5a3c;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .countdown-box {
+            background: #9b7653;
+            color: white;
+            padding: 20px 15px;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 65px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .countdown-number {
+            font-size: 32px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .streaming-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .streaming-title {
+            font-size: 28px;
+            color: #8b5a3c;
+            margin-bottom: 20px;
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .streaming-text {
+            font-size: 15px;
+            color: #8b6f47;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .stream-btn {
+            background: #9b7653;
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 25px;
+            font-size: 15px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+
+        .stream-btn:hover {
+            background: #8b6647;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(155, 118, 83, 0.4);
+        }
+
+        /* Closing */
+        .closing-text {
+            font-size: 15px;
+            color: #8b6f47;
+            text-align: center;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .couple-names-closing {
+            font-size: 38px;
+            color: #8b5a3c;
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            margin-top: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        /* Navigation */
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 480px;
+            width: 100%;
+            background: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+            border-radius: 30px 30px 0 0;
+            z-index: 100;
+        }
+
+        .nav-btn {
+            background: #9b7653;
+            color: white;
+            border: none;
+            width: 55px;
+            height: 55px;
+            border-radius: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            transition: all 0.3s;
+        }
+
+        .nav-btn.active {
+            background: #7a5a42;
+            transform: scale(1.1);
+        }
+
+        .music-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #9b7653;
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 101;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+            }
+            
+            .couple-names {
+                font-size: 36px;
+            }
+            
+            .couple-illustration {
+                width: 250px;
+                height: 280px;
+            }
+            
+            .page {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="background-music" loop>
+        <source src="musik.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <div class="page cover-page" id="coverPage">
+            <div class="cover-floral"></div>
+            
+            <svg class="decoration top-left" viewBox="0 0 100 100">
+                <path d="M0,0 Q20,10 10,30 T0,60" stroke="#c9946f" stroke-width="2" fill="none"/>
+                <circle cx="15" cy="15" r="3" fill="#d4a574"/>
+                <circle cx="25" cy="35" r="2" fill="#d4a574"/>
+                <path d="M5,20 L15,25 L10,35" stroke="#b88a5f" stroke-width="2" fill="none"/>
+            </svg>
+            
+            <svg class="decoration bottom-right" viewBox="0 0 100 100">
+                <path d="M100,100 Q80,90 90,70 T100,40" stroke="#c9946f" stroke-width="2" fill="none"/>
+                <circle cx="85" cy="85" r="3" fill="#d4a574"/>
+                <circle cx="75" cy="65" r="2" fill="#d4a574"/>
+                <path d="M95,80 L85,75 L90,65" stroke="#b88a5f" stroke-width="2" fill="none"/>
+            </svg>
+
+            <p class="wedding-title">The Wedding Of</p>
+            <h1 class="couple-names">Habib & Adiba</h1>
+            
+            <div class="couple-illustration"></div>
+            
+            <p class="greeting-text">Kepada Bapak/Ibu/Saudara/i</p>
+            <p class="guest-name" id="guest-name-placeholder">Nama Tamu</p>
+            
+            <button class="open-btn" onclick="openInvitation()">
+                <span>📧</span> Buka Undangan
+            </button>
+        </div>
+
+        <div class="main-content" id="mainContent">
+            <div class="page" id="page1">
+                <svg class="decoration top-left" viewBox="0 0 100 100">
+                    <path d="M0,0 Q20,10 10,30 T0,60" stroke="#c9946f" stroke-width="2" fill="none"/>
+                    <circle cx="15" cy="15" r="3" fill="#d4a574"/>
+                </svg>
+                
+                <svg class="decoration top-right" viewBox="0 0 100 100">
+                    <path d="M100,0 Q80,10 90,30 T100,60" stroke="#c9946f" stroke-width="2" fill="none"/>
+                    <circle cx="85" cy="15" r="3" fill="#d4a574"/>
+                </svg>
+
+                <p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+                <p class="welcome-text">Assalamualaikum Wr. Wb.</p>
+                <p class="welcome-text">
+                    Tanpa mengurangi rasa hormat.<br>
+                    Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami:
+                </p>
+                
+                <div class="bride-photo"></div>
+            </div>
+
+            <div class="page hidden" id="page2">
+                <svg class="decoration top-left" viewBox="0 0 100 100">
+                    <path d="M0,0 Q20,10 10,30 T0,60" stroke="#c9946f" stroke-width="2" fill="none"/>
+                </svg>
+                
+                <svg class="decoration bottom-right" viewBox="0 0 100 100">
+                    <path d="M100,100 Q80,90 90,70 T100,40" stroke="#c9946f" stroke-width="2" fill="none"/>
+                </svg>
+
+                <p class="wedding-title">The Wedding Of</p>
+                <h2 class="couple-names">Habib & Adiba</h2>
+                
+                <div class="couple-illustration" style="width: 240px; height: 280px; margin: 30px auto;"></div>
+                
+                <p class="welcome-text" style="font-style: normal; margin-top: 20px;">
+                    We invite you to celebrate our wedding
+                </p>
+                
+                <p class="event-date" style="font-size: 18px; font-weight: bold; margin-top: 20px;">
+                    Minggu, 31 Agustus 2025
+                </p>
+                
+                <button class="save-date-btn">📅 Save The Date</button>
+            </div>
+
+            <div class="page hidden" id="page3">
+                <svg class="decoration top-left" viewBox="0 0 100 100">
+                    <path d="M0,0 Q20,10 10,30 T0,60" stroke="#c9946f" stroke-width="2" fill="none"/>
+                </svg>
+                
+                <svg class="decoration top-right" viewBox="0 0 100 100">
+                    <path d="M100,0 Q80,10 90,30 T100,60" stroke="#c9946f" stroke-width="2" fill="none"/>
+                </svg>
+
+                <h2 class="countdown-title">Indahnya hari yang dinanti</h2>
+                
+                <div class="countdown-timer">
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-label">Hari</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-label">Jam</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-label">Menit</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-label">Detik</span>
+                    </div>
+                </div>
+
+                <div class="streaming-section">
+                    <h2 class="streaming-title">Live Streaming</h2>
+                    <p class="streaming-text">
+                        Kami mengundang Bapak/Ibu/Saudara/i untuk menyaksikan Pernikahan kami secara Virtual yang disiarkan langsung melalui Sosial Media di bawah ini
+                    </p>
+                    <p class="event-date" style="font-size: 16px; margin-bottom: 20px;">
+                        Minggu, 31 Agustus 2025
+                    </p>
+                    <button class="stream-btn">
+                        📷 Klik Disini
+                    </button>
+                </div>
+            </div>
+
+            <div class="page hidden" id="page4">
+                <svg class="decoration top-left" viewBox="0 0 100 100">
+                    <path d="M0,0 Q20,10 10,30 T0,60" stroke="#c9946f" stroke-width="2" fill="none"/>
+                </svg>
+                
+                <svg class="decoration bottom-right" viewBox="0 0 100 100">
+                    <path d="M100,100 Q80,90 90,70 T100,40" stroke="#c9946f" stroke-width="2" fill="none"/>
+                </svg>
+
+                <div class="couple-illustration" style="margin-bottom: 40px;"></div>
+                
+                <p class="closing-text">
+                    Wassalamu'alaikum Wr. Wb.
+                </p>
+                <p class="closing-text">
+                    Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.
+                </p>
+                
+                <h2 class="couple-names-closing">Habib & Adiba</h2>
+            </div>
+        </div>
+
+        <button class="music-toggle" id="musicToggle" onclick="toggleMusic()">
+            🎵
+        </button>
+
+        <div class="nav-bar hidden" id="navBar">
+            <button class="nav-btn active" onclick="goToPage(1)">🏠</button>
+            <button class="nav-btn" onclick="goToPage(2)">💝</button>
+            <button class="nav-btn" onclick="goToPage(3)">📅</button>
+            <button class="nav-btn" onclick="goToPage(4)">🤲</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        const music = document.getElementById('background-music');
+
+        // Fungsi untuk menampilkan nama tamu dari URL
+        function displayGuestName() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const guestName = urlParams.get('to');
+            const guestNameElement = document.getElementById('guest-name-placeholder');
+
+            if (guestName) {
+                guestNameElement.innerText = guestName.replace(/\+/g, ' ');
+            } else {
+                guestNameElement.innerText = 'Tamu Undangan';
+            }
+        }
+        
+        // Panggil fungsi nama tamu saat halaman pertama kali dimuat
+        displayGuestName();
+
+        function openInvitation() {
+            document.getElementById('coverPage').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+            document.getElementById('navBar').classList.remove('hidden');
+            document.getElementById('musicToggle').style.display = 'flex';
+            
+            // Mulai putar musik
+            music.play();
+            
+            startCountdown();
+        }
+
+        function goToPage(pageNum) {
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById('page' + i).classList.add('hidden');
+            }
+            document.getElementById('page' + pageNum).classList.remove('hidden');
+            
+            document.querySelectorAll('.nav-btn').forEach((btn, index) => {
+                if (index + 1 === pageNum) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            currentPage = pageNum;
+        }
+
+        function toggleMusic() {
+            const btn = document.getElementById('musicToggle');
+            if (music.paused) {
+                music.play();
+                btn.textContent = '🎵';
+            } else {
+                music.pause();
+                btn.textContent = '🔇';
+            }
+        }
+
+        function startCountdown() {
+            const weddingDate = new Date('August 31, 2025 00:00:00').getTime();
+            
+            const countdownInterval = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = weddingDate - now;
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = days;
+                document.getElementById('hours').textContent = hours;
+                document.getElementById('minutes').textContent = minutes;
+                document.getElementById('seconds').textContent = seconds;
+                
+                if (distance < 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById('days').textContent = '0';
+                    document.getElementById('hours').textContent = '0';
+                    document.getElementById('minutes').textContent = '0';
+                    document.getElementById('seconds').textContent = '0';
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
+```
